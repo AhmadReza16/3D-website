@@ -14,7 +14,10 @@ const Footer = () => {
       <hr />
 
       <div className="links">
-        <p>&copy; 2024 Apple Inc. All rights reserved.</p>
+        <p>
+          &copy; © {new Date().getFullYear()}. All rights reserved
+          "Ahmadreza16".
+        </p>
 
         <ul>
           {footerLinks.map(({ label, link }) => (
