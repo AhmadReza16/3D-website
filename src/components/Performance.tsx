@@ -4,7 +4,7 @@ import { gsap } from "gsap";
 import {
   performanceImages,
   performanceImgPositions,
-} from "../constants/index.js";
+} from "../constants/index.ts";
 import { useMediaQuery } from "react-responsive";
 
 const Performance = () => {
@@ -57,7 +57,7 @@ const Performance = () => {
         });
 
         // Position Each Performance Image
-        performancePositionsMemo.forEach((item) => {
+        performancePositionsMemo.forEach((item: any) => {
           if (item.id === "p5") return;
 
           const selector = `.${item.id}`;
